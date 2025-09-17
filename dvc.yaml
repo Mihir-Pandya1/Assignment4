@@ -12,7 +12,7 @@ stages:
       - outputs/y_pred.csv
 
   evaluate:
-    cmd: python src/evaluate.py
+    cmd: python src/evaluation.py
     deps:
       - src/evaluate.py
       - models/model.pkl
@@ -20,4 +20,5 @@ stages:
       - outputs/y_pred.csv
     metrics:
       - metrics.json
+
 
